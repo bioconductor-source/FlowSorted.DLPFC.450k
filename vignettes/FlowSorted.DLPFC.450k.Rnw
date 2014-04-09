@@ -1,0 +1,42 @@
+%\VignetteIndexEntry{FlowSorted DLPFC 450k Guide}
+%\VignetteDepends{FlowSorted.DLPFC.450k}
+%\VignettePackage{FlowSorted.DLPFC.450k}
+\documentclass[12pt]{article}
+<<options,echo=FALSE,results=hide>>=
+options(width=70)
+@ 
+\SweaveOpts{eps=FALSE,echo=TRUE}
+\usepackage{times}
+\usepackage{color,hyperref}
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc} 
+\usepackage[square,sort,comma,numbers]{natbib}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.75}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+          
+\newcommand{\Rcode}[1]{{\texttt{#1}}}
+\newcommand{\Rpackage}[1]{\textsf{#1}}
+\newcommand{\software}[1]{\textsf{#1}}
+\newcommand{\R}{\software{R}}
+
+\title{FlowSorted.DLPFC.450k User's Guide\\
+  A Public Illumina 450k Dataset}
+\author{Andrew E. Jaffe}
+\date{Modified: April 8, 2014.  Compiled: \today}
+
+
+\begin{document}
+\maketitle
+\setcounter{secnumdepth}{1} 
+
+\section{Introduction}
+
+The \Rpackage{FlowSorted.DLPFC.450k} package contains publicly available Illumina HumanMethylation450 (``450k'') DNA methylation microarray data from a recent publication by Guintivano et al. 2013 \cite{guintivano2013}, consisting of 58 samples, formatted as an \Rcode{RGset} object for easy integration and normalization using existing Bioconductor packages. For example, this dataset may be useful ``example'' data for other packages exploring, normalizing, or analyzing DNA methylation data.
+
+Researchers may find this package useful as these samples represent two different cellular populations of brain tissue generated on the same 29  individuals using flow sorting, a experimental procedure that can separate heterogeneous biological samples like brain into more pure cellular populations, like neurons and non-neurons using NeuN labeling \cite{akbar2008}. This data can be directly integrated with the \Rpackage{minfi} Bioconductor package to estimate cellular composition in users' frontal cortex Illumina 450k samples using a modified version of the algorithm described in Houseman et al. 2012 \cite{houseman2012} and Guintivano et al 2013 \cite {guintivano2013}.
+
+\bibliographystyle{unsrturl}
+\bibliography{FlowSorted.DLPFC.450k}
+\end{document}
