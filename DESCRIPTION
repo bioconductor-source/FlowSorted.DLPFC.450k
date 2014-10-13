@@ -1,5 +1,5 @@
 Package: FlowSorted.DLPFC.450k
-Version: 1.1.1
+Version: 1.1.2
 Title: Illumina HumanMethylation data on sorted frontal cortex cell
         populations
 Description: Raw data objects for the Illumina 450k DNA methylation
