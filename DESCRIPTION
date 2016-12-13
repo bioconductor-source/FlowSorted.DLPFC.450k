@@ -1,5 +1,5 @@
 Package: FlowSorted.DLPFC.450k
-Version: 1.11.0
+Version: 1.11.1
 Title: Illumina HumanMethylation data on sorted frontal cortex cell
         populations
 Description: Raw data objects for the Illumina 450k DNA methylation
@@ -7,6 +7,6 @@ Description: Raw data objects for the Illumina 450k DNA methylation
 Author: Andrew E Jaffe, Zachary A. Kaminsky
 Maintainer: Andrew E Jaffe <andrew.jaffe@libd.org>
 License: Artistic-2.0
-Depends: R (>= 2.13.0), minfi
+Depends: R (>= 2.13.0), minfi (>= 1.21.2)
 LazyData: yes
-biocViews: Homo_sapiens_Data, MicroarrayData
+biocViews: ExperimentData, Homo_sapiens_Data, Tissue, MicroarrayData, TissueMicroarrayData, MethylationArrayData
